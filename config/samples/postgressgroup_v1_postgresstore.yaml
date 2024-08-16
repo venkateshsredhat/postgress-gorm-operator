@@ -1,0 +1,11 @@
+apiVersion: postgressgroup.venkateshredhat.com/v1
+kind: PostgresStore
+metadata:
+  labels:
+    app.kubernetes.io/name: postgress-gorm-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: postgresstore-sample
+spec:
+  # TODO(user): Add fields here
+  id: 36
+  title: hello

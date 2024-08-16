@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - postgressgroup.venkateshredhat.com
+  resources:
+  - postgresstores
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - postgressgroup.venkateshredhat.com
+  resources:
+  - postgresstores/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - postgressgroup.venkateshredhat.com
+  resources:
+  - postgresstores/status
+  verbs:
+  - get
+  - patch
+  - update
