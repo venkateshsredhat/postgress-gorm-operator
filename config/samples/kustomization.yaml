@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- postgressgroup_v1_postgresstore.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
